@@ -5,7 +5,7 @@ html{
 /* Start nav bar*/ 
 /* Main Navigation */
 #nav {
-	position:relative;
+	position:center;
 	width:620px;
 	margin:0 auto; 
 	margin-top:50px;
@@ -14,7 +14,7 @@ html{
 
 ul#navigation {
 	margin:0px auto;
-	position:relative;
+	position:center;
 	float:left;
 	border-left:1px solid #c4dbe7;
 	border-right:1px solid #c4dbe7;
