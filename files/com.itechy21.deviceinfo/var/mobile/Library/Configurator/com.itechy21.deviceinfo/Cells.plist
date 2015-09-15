@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>category</key>
+			<string>Beta Modules</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.itechy21.deviceinfo</string>
+			<key>key</key>
+			<string>info</string>
+			<key>label</key>
+			<string>Device info</string>
+			<key>popupText</key>
+			<string>Grabs things like configurator options and cydia tweaks to help with troubleshooting problems.</string>
+			<key>requiredCapabilities</key>
+			<array>
+				<string>advancedConfig</string>
+			</array>
+			<key>textColor</key>
+			<string>blueColor</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>Debug helper</string>
+</dict>
+</plist>

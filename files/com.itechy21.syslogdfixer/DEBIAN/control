@@ -1,0 +1,11 @@
+Package: com.itechy21.syslogdfixer
+Name: Syslogd Fixer
+Version: 1.0.0S
+Section: Utilities
+Architecture: iphoneos-arm
+Depends: firmware(=3.1.3) | com.whited00r.whited00r
+Description: Enables and disables the syslogd deamon with a flick of a switch. This will have a slight impact on performance.
+Depiction: http://repo.itechy21.com/depictions/sf.html
+Author: iTechy21 <itechy21@whited00r.com>
+Sponsor: whited00r <www.whited00r.com>
+Maintainer: iTechy21 <itechy21@whited00r.com>

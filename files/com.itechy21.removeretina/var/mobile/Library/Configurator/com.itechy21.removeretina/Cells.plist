@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>category</key>
+			<string>Beta Modules</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key> 	<string>com.itechy21.removeretina</string>
+			<key>key</key>
+			<string>retina</string>
+			<key>textColor</key>
+			<string>blueColor</string>
+			<key>label</key>
+			<string>Retina Remover</string>
+			<key>popupText</key>
+			<string>Deletes retina images to free up space. Your device will reboot after running!</string>
+			<key>requiredCapabilities</key>
+			<array>
+				<string>advancedConfig</string>
+			</array>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>Retina Remover</string>
+</dict>
+</plist>

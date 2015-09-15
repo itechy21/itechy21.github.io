@@ -1,0 +1,11 @@
+Package: com.itechy21.debuginfo
+Name: Device information
+Version: 1.0.0S
+Section: Utilities
+Architecture: iphoneos-arm
+Depends: firmware(=3.1.3) | com.whited00r.whited00r
+Description: Grabs things such as your whited00r setup to help diagnose issues.
+Depiction: http://repo.itechy21.com/depictions/di.html 
+Author: iTechy21 <itechy21@whited00r.com>
+Sponsor: whited00r <www.whited00r.com>
+Maintainer: iTechy21 <itechy21@whited00r.com>

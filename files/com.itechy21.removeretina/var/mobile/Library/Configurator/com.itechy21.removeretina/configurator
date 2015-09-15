@@ -1,0 +1,16 @@
+#!/bin/bash
+#By James L AKA iTechy21 all rights reserved
+key="$1"
+value="$2"
+if [[ "$key" == "retina" && "$value" == "enable" ]];
+then
+sbalert -t "Please wait..." -m "Searching and removing Retina Images. This may take a while..." -d "" & alert_id="$!"
+updatedb && locate @2x.png >	    .deletelist_itechy
+	while read file; do rm -rf "$file"; done < .deletelist_itechy
+	num=$(cat .deletelist_itechy | wc -l)
+	rm .deletelist_itechy
+kill $alert_id
+sbalert -t "Done" -m  "$num Retina Images removed. The device will now reboot."
+plutil -key retina -0 /var/mobile/Library/Preferences/com.itechy21.removeretina.plist
+reboot
+fi

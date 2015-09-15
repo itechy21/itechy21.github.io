@@ -1,0 +1,45 @@
+Package: com.itechy21.debuginfo
+Version: 1.0.0S
+Section: Utilities
+Maintainer: iTechy21 <itechy21@whited00r.com>
+Depends: firmware(=3.1.3)
+Architecture: iphoneos-arm
+Filename: ./com.itechy21.deviceinfo.deb
+Size: 2140
+MD5sum: d8a7cff2cc03e67f598925d2faa6ce76
+Description: Grabs things such as your whited00r setup to help diagnose issues.
+Name: Device information
+Author: iTechy21 <itechy21@whited00r.com>
+Sponsor: whited00r <www.whited00r.com>
+Depiction: http://repo.itechy21.com/depictions/di.html
+
+Package: com.itechy21.removeretina
+Version: 1.0.0S
+Section: Utilities
+Maintainer: iTechy21 <itechy21@whited00r.com>
+Depends: firmware(=3.1.3)
+Architecture: iphoneos-arm
+Filename: ./com.itechy21.removeretina.deb
+Size: 1586
+MD5sum: 2f615dee826370ee3930aca3c751dc5d
+Description: Removes Retina images freeing up space on your device (in beta).
+Name: Retina Remover
+Author: iTechy21 <itechy21@whited00r.com>
+Sponsor: whited00r <www.whited00r.com>
+Depiction: http://repo.itechy21.com/depictions/rr.html
+
+Package: com.itechy21.syslogdfixer
+Version: 1.0.0S
+Section: Utilities
+Maintainer: iTechy21 <itechy21@whited00r.com>
+Depends: firmware(=3.1.3)
+Architecture: iphoneos-arm
+Filename: ./com.itechy21.syslogdfixer.deb
+Size: 1460
+MD5sum: 28dcd7c3aa6599a25679d0ba2a41b8ab
+Description: Enables and disables the syslogd deamon with a flick of a switch. This will have a slight impact on performance.
+Name: Syslogd Fixer
+Author: iTechy21 <itechy21@whited00r.com>
+Sponsor: whited00r <www.whited00r.com>
+Depiction: http://repo.itechy21.com/depictions/sf.html
+

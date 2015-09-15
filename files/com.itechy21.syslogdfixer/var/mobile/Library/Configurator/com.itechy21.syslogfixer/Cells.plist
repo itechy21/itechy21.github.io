@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>category</key>
+			<string>Beta Modules</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.itechy21.syslogfixer</string>
+			<key>key</key>
+			<string>syslog</string>
+			<key>label</key>
+			<string>Crash Loging</string>
+			<key>popupText</key>
+			<string>Enables 3 deamons related to crash loging.</string>
+			<key>requiredCapabilities</key>
+			<array>
+				<string>advancedConfig</string>
+			</array>
+			<key>textColor</key>
+			<string>blueColor</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>Crash Loging</string>
+</dict>
+</plist>

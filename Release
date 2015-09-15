@@ -1,0 +1,15 @@
+Origin: iTechy21
+
+Label: iTechy21
+
+Suite: stable
+
+Version: 0.1
+
+Codename: iT
+
+Architectures: iphoneos-arm
+
+Components: main
+
+Description: Repository for iTechy21's modules

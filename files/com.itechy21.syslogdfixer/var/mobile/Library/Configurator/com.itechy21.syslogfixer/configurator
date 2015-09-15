@@ -1,0 +1,23 @@
+#!/bin/bash
+key="$1"
+value="$2"
+if [[ "$key" == "syslog" && "$value" == "enable" ]];
+then
+cd /
+mv /.Trashes/501/com.apple.syslogd.plist /System/Library/LaunchDaemons/
+mv /.Trashes/501/com.apple.ReportCrash.plist /System/Library/LaunchDaemons/
+mv /.Trashes/501/com.apple.ReportCrash.SafetyNet.plist /System/Library/LaunchDaemons
+launchctl load /System/Library/LaunchDaemons/com.apple.syslogd.plist
+launchctl load /System/Library/LaunchDaemons/com.apple.ReportCrash.plist
+launchctl load /System/Library/LaunchDaemons/com.apple.ReportCrash.SafetyNet.plist
+#
+elif [[ "$key" == "syslog" && "$value" == "disable" ]];
+then
+cd /
+launchctl unload /System/Library/LaunchDaemons/com.apple.syslogd.plist
+launchctl unload /System/Library/LaunchDaemons/com.apple.ReportCrash.plist
+launchctl unload /System/Library/LaunchDaemons/com.apple.ReportCrash.SafetyNet.plist
+mv /System/Library/LaunchDaemons/com.apple.syslogd.plist /.Trashes/501/
+mv /System/Library/LaunchDaemons/com.apple.ReportCrash.plist /.Trashes/501/ 
+mv /System/Library/LaunchDaemons/com.apple.ReportCrash.SafetyNet.plist /.Trashes/501/
+fi

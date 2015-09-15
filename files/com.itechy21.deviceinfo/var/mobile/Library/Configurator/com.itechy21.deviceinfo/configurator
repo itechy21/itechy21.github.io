@@ -1,0 +1,20 @@
+#!/bin/bash
+key="$1"
+value="$2"
+debugscript="$sh /var/mobile/Library/Configurator/com.itechy21.deviceinfo/debug.sh"
+if [[ "$key" == "info" && "$value" == "enable" ]];
+then
+$debugscript
+pbcopy < /var/mobile/Whited00r/debug.txt
+plutil -key info -0 /var/mobile/Library/Preferences/com.itechy21.deviceinfo.plist
+sbalert -t "Done" -m "Log has been copied to your clipboard. Please paste it where you were asked."
+fi
+#
+elif [[ "$key" == "info" && "$value" == "disable" ]];
+then
+
+#
+else
+sbalert -t "Error" -m "Please report that you encountered an error on the forum thread. And I will look into this..."
+sbalert -t "$1" -m "$2"
+fi
