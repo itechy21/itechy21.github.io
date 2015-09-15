@@ -24,13 +24,14 @@ html{
 #menu {
     display: inline-block;
     list-style:none;
+    position: relative;
     background-color: #98bf21;
     border-radius: 10px;
     text-align: center
 }
 #menu li > ul {
     float: left;
-    position: absolute;
+    display:block;
     list-style: none;
     text-align: center
     opacity:0;
