@@ -97,7 +97,7 @@ ul#navigation ul {
 
 ul#navigation ul li ul {
     top: 0;
-    left: 181px; /* strong related to width:180px; from above */
+    left: 181px;
 }
 
 ul#navigation ul li {
@@ -122,7 +122,7 @@ ul#navigation ul li a {
 /* end of navbar */
 /*fix image align*/
 img {
-    position: auto;
+    position: center;
     margin: auto;
 }
 h1 {text-transform: uppercase;
