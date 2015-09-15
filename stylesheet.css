@@ -30,9 +30,12 @@ html{
 }
 #menu li {
     float: left;
-    position: relative;
+    position: absolute;
     list-style: none;
     text-align: center
+    opacity:0;
+    visibility:hidden;
+    
 }
 #menu > li:hover > ul {
     display: block;
