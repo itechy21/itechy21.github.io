@@ -28,7 +28,7 @@ html{
     border-radius: 10px;
     text-align: center
 }
-#menu li {
+#menu li > ul {
     float: left;
     position: absolute;
     list-style: none;
