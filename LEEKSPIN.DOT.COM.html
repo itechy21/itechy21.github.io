@@ -1,0 +1,76 @@
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>LEEKSPIN DOT COM</title>
+<script>
+var time
+var output
+
+function Init(){
+	time = 1;
+	StartTimer()
+}
+
+function convertOutput(){
+	var hours = 0
+	var mins = 0
+	var secs = time
+	
+	while(secs >= 60){
+		secs -= 60;
+		mins += 1;
+	}
+	
+	if(secs < 10){
+		secs = "0" + secs;
+	}
+	
+	while(mins >= 60){
+		mins -= 60;
+		hours += 1;
+	}
+	
+	if(mins < 10){
+		mins = "0" + mins;
+	}
+	
+	output = hours + ":" + mins + ":" + secs;
+}
+
+function StartTimer(){
+	time += 1;
+	convertOutput();
+	document.getElementById("time").innerHTML = output;
+	self.setTimeout("StartTimer()", 1000);
+}
+</script>
+
+<style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+<body onload="javascript:Init()" bgcolor="black" data-gr-c-s-loaded="true">
+<center><video width="auto" height="auto" autoplay loop>
+<source src="funny durr plant ytpmv.mp4" type="video/mp4">
+</video>
+
+<div style="text-align:center; color:white; font-size:14pt; font-weight:bold">
+
+
+
+You've been spinning for <span id="time">0:00:00</span>.
+</div>
+
+
+
+
+</body></html>
